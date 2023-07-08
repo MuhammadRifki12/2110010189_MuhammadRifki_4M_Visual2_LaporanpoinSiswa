@@ -1,6 +1,6 @@
 object Siswa: TSiswa
-  Left = 308
-  Top = 84
+  Left = 221
+  Top = 141
   Width = 957
   Height = 648
   Caption = 'frSiswa'
@@ -297,8 +297,8 @@ object Siswa: TSiswa
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 
-      'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
-      'ql.dll'
+      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
+      'wa\libmysql.dll'
     Left = 880
     Top = 368
   end
@@ -315,5 +315,118 @@ object Siswa: TSiswa
     Params = <>
     Left = 880
     Top = 416
+  end
+  object frxReport1: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45115.742542106500000000
+    ReportOptions.LastChange = 45115.748543530100000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 384
+    Top = 88
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 22.677180000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 22.677180000000000000
+        Top = 64.252010000000000000
+        Width = 740.409927000000000000
+        object Memo1: TfrxMemoView
+          Left = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'id')
+          ParentFont = False
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 22.677180000000000000
+        Top = 147.401670000000000000
+        Width = 740.409927000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        RowCount = 0
+        object Memo2: TfrxMemoView
+          Left = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDataset1."id"]')
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'id=id'
+      'nis=nis'
+      'nisn=nisn'
+      'nama_siswa=nama_siswa'
+      'nik=nik'
+      'tempat_lahir=tempat_lahir'
+      'tanggal_lahir=tanggal_lahir'
+      'jenis_kelamin=jenis_kelamin'
+      'tingkat_kelas=tingkat_kelas'
+      'jurusan=jurusan'
+      'wali_kelas=wali_kelas'
+      'alamat=alamat'
+      'telp=telp'
+      'hp=hp'
+      'status=status')
+    DataSet = ZQuery1
+    BCDToCurrency = False
+    Left = 480
+    Top = 88
   end
 end

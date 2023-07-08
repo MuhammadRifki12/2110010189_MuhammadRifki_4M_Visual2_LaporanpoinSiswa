@@ -3,7 +3,7 @@ object WaliKelas: TWaliKelas
   Top = 86
   Width = 1044
   Height = 541
-  Caption = 'Wali Kelas'
+  Caption = 's'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -216,8 +216,8 @@ object WaliKelas: TWaliKelas
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 
-      'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
-      'ql.dll'
+      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
+      'wa\libmysql.dll'
     Left = 376
     Top = 8
   end
