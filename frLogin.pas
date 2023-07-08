@@ -1,21 +1,18 @@
-unit Unit3;
+unit frLogin;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Grids, DBGrids;
+  Dialogs, StdCtrls;
 
 type
-  TForm3 = class(TForm)
+  TLogin = class(TForm)
     Label1: TLabel;
     Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
+    username: TEdit;
+    password: TEdit;
+    Button1: TButton;
   private
     { Private declarations }
   public
@@ -23,10 +20,13 @@ type
   end;
 
 var
-  Form3: TForm3;
+  Login: TLogin;
 
 implementation
 
 {$R *.dfm}
+
+uses
+  frKoneksi;
 
 end.
