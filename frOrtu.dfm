@@ -237,8 +237,8 @@ object Ortu: TOrtu
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 
-      'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
-      'ql.dll'
+      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
+      'wa\libmysql.dll'
     Left = 416
     Top = 48
   end

@@ -217,6 +217,7 @@ object Siswa: TSiswa
     Height = 25
     Caption = 'Laporan'
     TabOrder = 13
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 16
@@ -325,7 +326,7 @@ object Siswa: TSiswa
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45115.742542106500000000
-    ReportOptions.LastChange = 45115.748543530100000000
+    ReportOptions.LastChange = 45115.749286446800000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -358,7 +359,7 @@ object Siswa: TSiswa
         Width = 740.409927000000000000
       end
       object PageHeader1: TfrxPageHeader
-        Height = 22.677180000000000000
+        Height = 18.897650000000000000
         Top = 64.252010000000000000
         Width = 740.409927000000000000
         object Memo1: TfrxMemoView
@@ -378,8 +379,8 @@ object Siswa: TSiswa
         end
       end
       object MasterData1: TfrxMasterData
-        Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Height = 18.897650000000000000
+        Top = 143.622140000000000000
         Width = 740.409927000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset1'

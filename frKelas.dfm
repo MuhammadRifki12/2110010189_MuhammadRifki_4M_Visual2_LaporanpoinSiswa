@@ -1,6 +1,6 @@
 object Kelas: TKelas
-  Left = 321
-  Top = 223
+  Left = 227
+  Top = 138
   Width = 1044
   Height = 541
   Caption = 'Kelas'
@@ -138,8 +138,8 @@ object Kelas: TKelas
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 
-      'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
-      'ql.dll'
+      'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
+      'wa\libmysql.dll'
     Left = 440
     Top = 32
   end
