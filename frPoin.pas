@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Grids, DBGrids, ZAbstractConnection, ZConnection, DB,
-  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, frxClass, frxDBSet;
 
 type
   TPoin = class(TForm)
@@ -24,11 +24,14 @@ type
     ZConnection: TZConnection;
     DBGrid1: TDBGrid;
     ComboBox1: TComboBox;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -102,6 +105,11 @@ begin
   Edit1.Text := '';
   Edit2.Text := '';
   ComboBox1.ItemIndex := -1;
+end;
+
+procedure TPoin.Button5Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
 end;
 
 end.

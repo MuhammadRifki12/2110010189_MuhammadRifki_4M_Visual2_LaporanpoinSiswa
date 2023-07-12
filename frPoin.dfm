@@ -91,6 +91,7 @@ object Poin: TPoin
     Height = 25
     Caption = 'Laporan'
     TabOrder = 6
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 24
@@ -146,5 +147,158 @@ object Poin: TPoin
       'wa\libmysql.dll'
     Left = 464
     Top = 48
+  end
+  object frxReport1: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45119.812115011600000000
+    ReportOptions.LastChange = 45119.815322604200000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 608
+    Top = 160
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 22.677180000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        object Memo1: TfrxMemoView
+          Left = 336.378170000000000000
+          Top = 3.779530000000000000
+          Width = 139.842610000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8 = (
+            'REPORT DATAPOIN')
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 22.677180000000000000
+        Top = 64.252010000000000000
+        Width = 740.409927000000000000
+        object Memo2: TfrxMemoView
+          Left = 7.559060000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8 = (
+            'id')
+        end
+        object Memo4: TfrxMemoView
+          Left = 102.047310000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8 = (
+            'nama')
+        end
+        object Memo6: TfrxMemoView
+          Left = 196.535560000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8 = (
+            'bobot')
+        end
+        object Memo8: TfrxMemoView
+          Left = 291.023810000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8 = (
+            'jenis')
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 22.677180000000000000
+        Top = 147.401670000000000000
+        Width = 740.409927000000000000
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        RowCount = 0
+        object Memo3: TfrxMemoView
+          Left = 7.559060000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'id'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Memo.UTF8 = (
+            '[frxDBDataset1."id"]')
+        end
+        object Memo5: TfrxMemoView
+          Left = 102.047310000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'nama'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Memo.UTF8 = (
+            '[frxDBDataset1."nama"]')
+        end
+        object Memo7: TfrxMemoView
+          Left = 196.535560000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'bobot'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Memo.UTF8 = (
+            '[frxDBDataset1."bobot"]')
+        end
+        object Memo9: TfrxMemoView
+          Left = 291.023810000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'jenis'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Memo.UTF8 = (
+            '[frxDBDataset1."jenis"]')
+        end
+      end
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSource = DataSource1
+    BCDToCurrency = False
+    Left = 664
+    Top = 120
   end
 end
