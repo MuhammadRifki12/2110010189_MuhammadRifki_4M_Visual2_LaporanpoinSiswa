@@ -4,7 +4,7 @@ object Login: TLogin
   Width = 356
   Height = 305
   Caption = 'frLogin'
-  Color = clBtnFace
+  Color = clHighlight
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

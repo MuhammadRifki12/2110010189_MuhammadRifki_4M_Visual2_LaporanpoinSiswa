@@ -4,7 +4,7 @@ object Siswa: TSiswa
   Width = 957
   Height = 648
   Caption = 'frSiswa'
-  Color = clBtnFace
+  Color = clMenuHighlight
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -300,13 +300,13 @@ object Siswa: TSiswa
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
       'wa\libmysql.dll'
-    Left = 880
-    Top = 368
+    Left = 376
+    Top = 24
   end
   object dsSiswa: TDataSource
     DataSet = ZQuery1
-    Left = 880
-    Top = 464
+    Left = 536
+    Top = 32
   end
   object ZQuery1: TZQuery
     Connection = ZConnection
@@ -314,8 +314,8 @@ object Siswa: TSiswa
     SQL.Strings = (
       'select * from siswa')
     Params = <>
-    Left = 880
-    Top = 416
+    Left = 448
+    Top = 24
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'

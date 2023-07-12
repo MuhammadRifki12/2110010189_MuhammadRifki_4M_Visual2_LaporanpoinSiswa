@@ -4,7 +4,7 @@ object Kelas: TKelas
   Width = 1044
   Height = 541
   Caption = 'Kelas'
-  Color = clBtnFace
+  Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -83,7 +83,7 @@ object Kelas: TKelas
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 272
+    Left = 312
     Top = 96
     Width = 75
     Height = 25
@@ -119,13 +119,13 @@ object Kelas: TKelas
     SQL.Strings = (
       'select * from kelas')
     Params = <>
-    Left = 504
-    Top = 24
+    Left = 592
+    Top = 32
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 568
-    Top = 24
+    Left = 576
+    Top = 128
   end
   object ZConnection: TZConnection
     ControlsCodePage = cGET_ACP
@@ -140,7 +140,7 @@ object Kelas: TKelas
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Laporan Poin Sis' +
       'wa\libmysql.dll'
-    Left = 440
+    Left = 496
     Top = 32
   end
   object frxReport1: TfrxReport
@@ -158,8 +158,8 @@ object Kelas: TKelas
       'begin'
       ''
       'end.')
-    Left = 536
-    Top = 136
+    Left = 496
+    Top = 128
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -360,7 +360,7 @@ object Kelas: TKelas
       'jurusan=jurusan')
     DataSource = DataSource1
     BCDToCurrency = False
-    Left = 632
-    Top = 152
+    Left = 408
+    Top = 32
   end
 end

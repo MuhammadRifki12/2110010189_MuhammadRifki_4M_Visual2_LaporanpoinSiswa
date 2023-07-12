@@ -1,10 +1,10 @@
 object Poin: TPoin
-  Left = 498
-  Top = 109
+  Left = 223
+  Top = 111
   Width = 1044
   Height = 541
   Caption = 'Poin'
-  Color = clBtnFace
+  Color = clHighlight
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
