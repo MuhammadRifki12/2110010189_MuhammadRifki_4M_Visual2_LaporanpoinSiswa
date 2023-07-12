@@ -13,8 +13,8 @@ uses
 
 begin
   Application.Initialize;
-  Application.CreateForm(TWaliKelas, WaliKelas);
   Application.CreateForm(TSiswa, Siswa);
+  Application.CreateForm(TWaliKelas, WaliKelas);
   Application.CreateForm(TOrtu, Ortu);
   Application.CreateForm(TKelas, Kelas);
   Application.CreateForm(TPoin, Poin);
